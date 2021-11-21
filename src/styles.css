@@ -1,0 +1,50 @@
+body {
+  background-image: url("/src/images/gold.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
+  background-size: cover;
+}
+
+.intro {
+  display: block;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background-color: #f0d4d5d9;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.content {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f0d4d5d9;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.content img {
+  border-radius: 5px;
+}
+
+.content p {
+  margin: 60px 20px;
+}
+
+.footer {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f0d4d5d9;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.intro h1 {
+  color: rgb(88, 31, 32);
+  font-style: italic;
+  font-weight: bold;
+}
