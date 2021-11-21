@@ -1,6 +1,9 @@
 :root {
   --background-color: rgba(253, 246, 240, 0.6);
   --main-shadow: 0px 10px 10px rgba(0 0 0 / 8%);
+  --primary-font: "Cormorant Infant", serif;
+  --secondary-font: "Playfair Display", serif;
+  --primary-color: rgb(245, 174, 195);
 }
 
 body {
@@ -8,6 +11,7 @@ body {
   background-size: auto;
   background-position: center;
   text-align: center;
+  font-family: var(--secondary-font);
 }
 
 .navigation {
@@ -21,25 +25,31 @@ body {
   background: var(--background-color);
   border-radius: 5px;
   box-shadow: var(--main-shadow);
+  font-family: var(--primary-font);
 }
 
 .intro h1 {
-  color: rgb(248, 181, 201);
+  color: var(--primary-color);
   font-size: 52px;
   font-style: italic;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .intro h2 {
   color: rgb(253, 204, 198);
   font-size: 28px;
+  font-weight: 800;
+}
+
+.container h5 {
+  color: var(--primary-color);
 }
 
 .content {
+  color: grey;
   margin: 30px auto;
   padding: 20px;
   background: var(--background-color);
-
   border-radius: 5px;
   box-shadow: var(--main-shadow);
 }
@@ -63,4 +73,11 @@ body {
 
 .footer a {
   text-decoration: none;
+}
+
+hr.rounded {
+  margin: 0 auto;
+  width: 50%;
+  border-top: 8px solid #f5c6aa;
+  border-radius: 5px;
 }
