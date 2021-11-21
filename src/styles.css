@@ -1,24 +1,37 @@
+:root {
+  --background-color: rgba(252, 216, 212, 0.7);
+}
+
 body {
-  background-image: url("/src/images/gold.jpg");
-  background-repeat: no-repeat;
+  background-image: url("/src/images/paper.jpg");
+  background-size: auto;
   background-position: center;
-  background-attachment: scroll;
-  background-size: cover;
 }
 
 .intro {
   display: block;
   margin: 0 auto;
   padding: 80px 20px;
-  background-color: #f0d4d5d9;
+  background: var(--background-color);
   text-align: center;
   border-radius: 5px;
+}
+
+.intro h1 {
+  color: rgb(149, 78, 79);
+  font-size: 64px;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.intro h2 {
+  color: rgb(231, 182, 153);
 }
 
 .content {
   margin: 30px auto;
   padding: 20px;
-  background-color: #f0d4d5d9;
+  background: var(--background-color);
   text-align: center;
   border-radius: 5px;
 }
@@ -34,17 +47,11 @@ body {
 .footer {
   margin: 0 auto;
   padding: 20px;
-  background-color: #f0d4d5d9;
+  background: var(--background-color);
   text-align: center;
   border-radius: 5px;
 }
 
 .footer a {
   text-decoration: none;
-}
-
-.intro h1 {
-  color: rgb(88, 31, 32);
-  font-style: italic;
-  font-weight: bold;
 }
