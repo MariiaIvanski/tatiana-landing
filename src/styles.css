@@ -71,7 +71,7 @@ body {
   box-shadow: var(--main-shadow);
 }
 
-.footer a {
+a {
   text-decoration: none;
 }
 
