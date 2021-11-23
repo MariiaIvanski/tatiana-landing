@@ -4,6 +4,8 @@
   --primary-font: "Cormorant Infant", serif;
   --secondary-font: "Playfair Display", serif;
   --primary-color: rgb(216, 139, 163);
+  --link-color: #878850dc;
+  --secondary-link-color: #878850b3;
 }
 
 body {
@@ -73,6 +75,26 @@ body {
 
 a {
   text-decoration: none;
+  color: #878850;
+  transition: all 100ms ease-in-out;
+}
+
+a:hover {
+  color: #878850bd;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #878850;
+  transition: all 100ms ease-in-out;
+}
+
+.nav .active {
+  font-weight: bold;
+}
+
+.nav a:hover {
+  color: #878850bd;
 }
 
 hr.rounded {
@@ -80,4 +102,67 @@ hr.rounded {
   width: 50%;
   border-top: 8px solid #f5c6aa;
   border-radius: 5px;
+}
+
+.btn-branding {
+  color: #fff;
+  background: var(--link-color);
+  border-radius: 50px;
+  margin: 30px 0;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  transition: all 100ms ease-in-out;
+}
+
+.btn-branding:hover,
+.btn-branding:focus {
+  background: var(--secondary-link-color);
+  color: #fff;
+}
+
+.btn-branding-outline {
+  color: var(--link-color);
+  border: 1px solid var(--link-color);
+  border-radius: 4px;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 15px 30px;
+  transition: all 100ms ease-in-out;
+}
+
+.btn-branding-outline:hover {
+  background: var(--link-color);
+  color: var(--secondary-link-color);
+}
+
+.btn-primary:active {
+  color: #fff;
+  background-color: var(--link-color);
+  border-color: var(--link-color);
+  box-shadow: 0 0 0 4px var(--secondary-link-color);
+  outline: 0;
+}
+
+.btn-branding:active + .btn-branding:focus,
+.btn-check:checked + .btn-branding:focus,
+.btn-branding.active:focus,
+.btn-branding:active:focus,
+.show > .btn-branding.dropdown-toggle:focus {
+  box-shadow: 0 0 0 4px var(--link-color);
+}
+
+.top-button {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  margin-left: 90%;
+}
+
+.top-button .btn-branding {
+  border-radius: 50px;
+  margin: 5px 0;
+  font-size: 18px;
+  line-height: 24px;
+  padding: 4px 9px;
 }
