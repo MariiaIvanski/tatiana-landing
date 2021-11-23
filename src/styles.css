@@ -93,7 +93,8 @@ a:hover {
   font-weight: bold;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a:focus {
   color: #878850bd;
 }
 
