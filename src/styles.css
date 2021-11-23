@@ -3,7 +3,7 @@
   --main-shadow: 0px 10px 10px rgba(0 0 0 / 8%);
   --primary-font: "Cormorant Infant", serif;
   --secondary-font: "Playfair Display", serif;
-  --primary-color: rgb(245, 174, 195);
+  --primary-color: rgb(216, 139, 163);
 }
 
 body {
@@ -36,7 +36,7 @@ body {
 }
 
 .intro h2 {
-  color: rgb(253, 204, 198);
+  color: rgb(228, 176, 170);
   font-size: 28px;
   font-weight: 800;
 }
